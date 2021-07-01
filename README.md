@@ -1,3 +1,3 @@
 # dotfiles
 
-My *unoriginal* dotfiles :)
+My *unoriginal* dotfiles
