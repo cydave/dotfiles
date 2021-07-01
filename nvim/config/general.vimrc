@@ -18,7 +18,6 @@ set nobackup
 set noswapfile
 set smartcase
 set wrap
-"set nomodeline
 set timeoutlen=1000 ttimeoutlen=50
 set scrolloff=5
 set spelllang=en
@@ -47,15 +46,22 @@ let mapleader = ","
 map Q <NOP>
 
 " Color things
-if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
-if (has("termguicolors"))
-    set termguicolors
-endif
-if !exists('g:not_finish_vimplug')
-  colorscheme onedark
-endif
+set t_Co=256
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 syntax on
 colorscheme onedark
 set background=dark
+
+
+filetype plugin indent on
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
