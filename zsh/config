@@ -1,0 +1,15 @@
+ZSH_THEME="half-life"
+
+DISABLE_AUTO_UPDATE="true"
+DISABLE_MAGIC_FUNCTIONS=true
+
+plugins=(
+    gitfast
+)
+
+zstyle ':urlglobber' url-other-schema
+zstyle ':completion:*' special-dirs true
+
+source "$ZSH/oh-my-zsh.sh"
+
+# vim: ft=bash
