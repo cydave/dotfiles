@@ -10,7 +10,6 @@ tint2
 numlockx &
 xset r rate 250 25 &
 xcompmgr &
-xscreensaver -no-splash &
 xset -dpms
 xset s noblank
 xset s off
