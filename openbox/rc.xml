@@ -320,7 +320,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="W-l">
         <action name="Execute">
-            <command>xscreensaver-command -lock</command>
+            <command>i3lock -c 000000</command>
         </action>
     </keybind>
     <keybind key="W-r">
@@ -328,50 +328,46 @@
             <command>dmenu_run -fn 'Ubuntu Mono:pixelsize=11'</command>
         </action>
     </keybind>
-    <keybind key="W-F2">
-        <action name="Execute">
-            <command>gmrun</command>
-        </action>
-    </keybind>
     <keybind key="W-e">
         <action name="Execute">
             <command>Thunar</command>
-            </action>
-        </keybind>
-        <keybind key="C-A-T">
-            <action name="Execute">
-                <command>terminator</command>
-                <startupnotify>
-                    <enabled>yes</enabled>
-                </startupnotify>
-            </action>
-        </keybind>
-        # WINDOWTILING
+        </action>
+    </keybind>
+    <keybind key="C-A-T">
+        <action name="Execute">
+            <command>terminator</command>
+            <startupnotify>
+                <enabled>yes</enabled>
+            </startupnotify>
+        </action>
+    </keybind>
+    # WINDOWTILING
 
-        <!-- Window pseudotiling -->
-        <keybind key="W-Left">
-            # HalfLeftScreen
+    <!-- Window pseudotiling -->
+    <keybind key="W-Left">
+        # HalfLeftScreen
 
-            <action name="UnmaximizeFull"/>
-            <action name="MoveResizeTo">
-                <x>0</x>
-                <y>0</y>
-                <width>50%</width>
-                <height>1050</height>
-            </action>
-        </keybind>
-        <keybind key="W-Right">
-            # HalfRightScreen
+        <action name="UnmaximizeFull"/>
+        <action name="MoveResizeTo">
+            <x>0</x>
+            <y>0</y>
+            <width>50%</width>
+            <height>1050</height>
+        </action>
+    </keybind>
+    <keybind key="W-Right">
+        # HalfRightScreen
 
-            <action name="UnmaximizeFull"/>
-            <action name="MoveResizeTo">
-                <x>-0</x>
-                <y>0</y>
-                <width>50%</width>
-                <height>1050</height>
-            </action>
-        </keybind>
-        <keybind key="W-Up"># HalfUpperScreen
+        <action name="UnmaximizeFull"/>
+        <action name="MoveResizeTo">
+            <x>-0</x>
+            <y>0</y>
+            <width>50%</width>
+            <height>1050</height>
+        </action>
+    </keybind>
+    <keybind key="W-Up">
+        # HalfUpperScreen
         <action name="ToggleMaximizeFull"/>
         <action name="MoveResizeTo">
             <x>0</x>
@@ -388,13 +384,13 @@
         <width>100%</width>
         <height>555</height>
     </action>
-</keybind>
-<!-- Swap window to next screen -->
-<keybind key="C-Tab">
-    <action name="MoveResizeTo">
-        <monitor>next</monitor>
-    </action>
-</keybind>
+    </keybind>
+    <!-- Swap window to next screen -->
+    <keybind key="C-Tab">
+        <action name="MoveResizeTo">
+            <monitor>next</monitor>
+        </action>
+    </keybind>
 </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
