@@ -1,7 +1,7 @@
 alias activate="source venv/bin/activate"
 alias cat="bat"
 alias ip='ip -c'
-alias ll="ls -lth"
+alias ll="ls -lthr"
 alias mkscratch='ws=$(mktemp -d) && cd $ws && python3 -m venv venv && venv/bin/pip install ipython requests black isort'
 alias pacman="sudo pacman"
 alias vim="nvim"
