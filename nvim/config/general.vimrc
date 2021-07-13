@@ -19,7 +19,7 @@ set noswapfile
 set smartcase
 set wrap
 set timeoutlen=1000 ttimeoutlen=50
-set scrolloff=5
+set scrolloff=8
 set spelllang=en
 set ruler
 set backspace=indent,eol,start

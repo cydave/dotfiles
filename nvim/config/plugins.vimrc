@@ -12,9 +12,6 @@ Plug 'sheerun/vim-polyglot'
 " Git Gutter
 Plug 'airblade/vim-gitgutter'
 
-" CoC
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -22,16 +19,20 @@ map <C-p> :FZF<CR>
 
 " Emmet (HTML, CSS, JS completion)
 Plug 'mattn/emmet-vim'
-let g:user_emmet_leader_key=','
 
+" Ack but with ripgrep
 Plug 'mileszs/ack.vim'
 let g:ackprg = 'rg --vimgrep --no-heading -S'
 cnoreabbrev Ack Ack!
 nnoremap <C-g> :Ack!<Space>
 
-" Colors... lots of them
-" Plug 'drewtempelmeyer/palenight.vim'
-" Plug 'KeitaNakamura/neodark.vim'
+" Python black
+Plug 'psf/black', { 'branch': 'stable' }
+
+" CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Colors
 Plug 'joshdick/onedark.vim'
 let g:onedark_terminal_italics = 1
 let g:onedark_color_overrides = {
