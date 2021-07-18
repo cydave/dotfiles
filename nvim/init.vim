@@ -1,3 +1,3 @@
-source $HOME/.dot/nvim/config/plugins.vimrc
-source $HOME/.dot/nvim/config/general.vimrc
-source $HOME/.dot/nvim/config/coc_settings.vimrc
+source $HOME/.dot/nvim/config/plugins.vim
+source $HOME/.dot/nvim/config/general.vim
+source $HOME/.dot/nvim/config/coc_settings.vim

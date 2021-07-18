@@ -28,6 +28,9 @@ nnoremap <C-g> :Ack!<Space>
 
 " Python black
 Plug 'psf/black', { 'branch': 'stable' }
+let g:python_host_prog = '/home/me/.pyenv/shims/python3'
+let g:python2_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/home/me/.pyenv/shims/python3'
 
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
