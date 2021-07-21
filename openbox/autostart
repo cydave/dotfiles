@@ -1,14 +1,15 @@
 #!/bin/bash
 
 (\
-nitrogen --restore
+nitrogen --restore && \
+sleep 1s && \
 redshift -PO 3200 
 tint2
-numlockx
-xcompmgr
 ) &
 
-xset r rate 250 25
+numlockx &
+xset r rate 250 25 &
+xcompmgr &
 xset -dpms
 xset s noblank
 xset s off
