@@ -45,4 +45,6 @@ let g:onedark_color_overrides = {
             \ "cursor_grey": { "gui": "#3E4452", "cterm": "236", "cterm16": "8"},
             \}
 
+Plug 'fatih/vim-go'
+
 call plug#end()
