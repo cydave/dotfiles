@@ -13,6 +13,8 @@ let g:coc_global_extensions = [
     \ 'coc-ultisnips',
     \ 'coc-xml',
     \ 'coc-vetur',
+    \ 'coc-eslint',
+    \ 'coc-prettier',
     \ ]
 
 " Remap keys for gotos

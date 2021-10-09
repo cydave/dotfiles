@@ -40,11 +40,13 @@ Plug 'joshdick/onedark.vim'
 let g:onedark_terminal_italics = 1
 let g:onedark_color_overrides = {
             \ "black": {"gui": "#161616", "cterm": "255", "cterm16": "0" },
-            \ "vertsplit": {"gui": "#282828", "cterm": "155", "cterm16": "0" },
-            \ "split": {"gui": "#282828", "cterm": "155", "cterm16": "0" },
+            \ "vertsplit": {"gui": "#282828", "cterm": "200", "cterm16": "8" },
+            \ "split": {"gui": "#282828", "cterm": "200", "cterm16": "8" },
             \ "cursor_grey": { "gui": "#3E4452", "cterm": "236", "cterm16": "8"},
             \}
 
 Plug 'fatih/vim-go'
+
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
