@@ -39,11 +39,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'joshdick/onedark.vim'
 let g:onedark_terminal_italics = 1
 let g:onedark_color_overrides = {
-            \ "black": {"gui": "#0d1117", "cterm": "255", "cterm16": "0"  },
-            \ "vertsplit": {"gui": "#161b22", "cterm": "10", "cterm16": "8" },
-            \ "split": {"gui": "#161b22", "cterm": "10", "cterm16": "8" },
-            \ "cursor_grey": { "gui": "#161b22", "cterm": "236", "cterm16": "8"},
-            \ "special_grey": { "gui": "#161b22", "cterm": "236", "cterm16": "8"},
+            \ "black": {"gui": "#0d1117", "cterm": "255", "cterm16": "0"},
             \}
 
 Plug 'fatih/vim-go'
