@@ -42,8 +42,9 @@ let g:onedark_terminal_italics = 1
 "            \ "black": {"gui": "#0d1117", "cterm": "255", "cterm16": "0"},
 "            \}
 let g:onedark_color_overrides = {
-           \ "black": {"gui": "#121212", "cterm": "255", "cterm16": "0"},
-           \}
+            \ "black": {"gui": "#121212", "cterm": "255", "cterm16": "0"},
+            \ "background": {"gui": "#121212", "cterm": "255", "cterm16": "0"},
+            \}
 
 Plug 'fatih/vim-go'
 
