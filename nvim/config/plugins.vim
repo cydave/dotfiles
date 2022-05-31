@@ -15,7 +15,8 @@ Plug 'airblade/vim-gitgutter'
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-map <C-p> :FZF<CR>
+map <C-p> :Files<CR>
+let g:fzf_preview_window = 'right:60%'
 
 " Emmet (HTML, CSS, JS completion)
 Plug 'mattn/emmet-vim'
@@ -50,4 +51,15 @@ Plug 'fatih/vim-go'
 
 Plug 'editorconfig/editorconfig-vim'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+Plug 'OmniSharp/omnisharp-vim'
+" Supprot for different goto definitions for different file types.
+autocmd FileType cs nmap <silent> gd :OmniSharpGotoDefinition<CR>
+autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
+autocmd FileType cs nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
+
+Plug 'kyazdani42/nvim-web-devicons'
+"Plug 'romgrk/barbar.nvim'
 call plug#end()

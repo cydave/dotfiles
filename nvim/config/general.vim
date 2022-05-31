@@ -31,7 +31,8 @@ set expandtab
 set autoindent
 set smartindent
 set nocindent
-set synmaxcol=360
+set synmaxcol=0
+set redrawtime=10000
 set lazyredraw
 set fileformats=unix,dos,mac
 set splitbelow
@@ -65,3 +66,11 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
+
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <C-t> :tab split<CR>
+
+"nnoremap <silent> <C-Left> :BufferPrevious<CR>
+"nnoremap <silent> <C-Right> :BufferNext<CR>
+"nnoremap <silent> tc :BufferClose<CR>
